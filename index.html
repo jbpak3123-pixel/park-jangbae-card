@@ -497,7 +497,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #2563a8;outline-offset:3p
       · 문화예술 · ESG · 공공사업 · 개인정보 보호<br/>&nbsp;&nbsp;분야의 실행형 기획 및 사업전략 전문가</div>
       <div class="btn-row">
         <a href="tel:01023373123" class="btn btn-g">📞 전화 걸기</a>
-        <a href="mailto:jbpak3123@hanmail.net" class="btn btn-o">✉️ 이메일</a>
+        <button type="button" onclick="openInquiry('이메일 문의')" class="btn btn-o">✉️ 이메일</button>
         <button type="button" onclick="downloadVCard()" class="btn btn-o" style="border-color:rgba(201,151,58,.5);color:var(--gold);">📋 연락처 저장</button>
       </div>
     </div>
@@ -877,7 +877,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #2563a8;outline-offset:3p
     </div>
     <div class="c-grid">
       <a href="tel:01023373123" class="c-item"><span style="font-size:22px">📞</span><div><div class="c-type">전화</div><div class="c-val">010-2337-3123</div></div></a>
-      <a href="mailto:jbpak3123@hanmail.net" class="c-item"><span style="font-size:22px">✉️</span><div><div class="c-type">이메일</div><div class="c-val">jbpak3123@hanmail.net</div></div></a>
+      <div class="c-item" onclick="openInquiry('이메일 문의')" style="cursor:pointer;"><span style="font-size:22px">✉️</span><div><div class="c-type">이메일</div><div class="c-val">jbpak3123@hanmail.net</div></div></div>
       <div class="c-item" style="cursor:default"><span style="font-size:22px">📍</span><div><div class="c-type">지역</div><div class="c-val">서울 강동구</div></div></div>
       <div class="c-item" style="cursor:default"><span style="font-size:22px">🕐</span><div><div class="c-type">응답 시간</div><div class="c-val">평일 09:00 – 18:00</div></div></div>
       <a href="http://adsoft.kr" target="_blank" rel="noopener" class="c-item"><span style="font-size:22px">🌐</span><div><div class="c-type">홈페이지</div><div class="c-val">ADSoft · adsoft.kr</div></div></a>
@@ -962,10 +962,10 @@ button:focus-visible,a:focus-visible{outline:2px solid #2563a8;outline-offset:3p
         <span class="qr-c-icon">📞</span>
         <div><div class="qr-c-type">전화</div><div class="qr-c-val">010-2337-3123</div></div>
       </a>
-      <a href="mailto:jbpak3123@hanmail.net" class="qr-c-row" style="text-decoration:none;">
+      <div class="qr-c-row" onclick="closeQRModal();setTimeout(function(){openInquiry('이메일 문의');},200);" style="cursor:pointer;">
         <span class="qr-c-icon">✉️</span>
         <div><div class="qr-c-type">이메일</div><div class="qr-c-val">jbpak3123@hanmail.net</div></div>
-      </a>
+      </div>
       <a href="http://adsoft.kr" target="_blank" rel="noopener" class="qr-c-row" style="text-decoration:none;">
         <span class="qr-c-icon">🌐</span>
         <div><div class="qr-c-type">홈페이지</div><div class="qr-c-val">adsoft.kr</div></div>
