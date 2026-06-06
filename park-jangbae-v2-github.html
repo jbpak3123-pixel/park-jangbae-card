@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<meta name="description" content="박장배 디지털 명함 — 문화예술·사업기획·ESG·CCTV개인정보보안 전문가"/>
+<meta name="keywords" content="박장배,사업기획,문화예술,ESG,CCTV개인정보보안,강동미술협회,한국섬유자원순환협회"/>
+<meta property="og:title" content="박장배 · 디지털 프로필"/>
+<meta property="og:description" content="사람·조직·사업을 연결해 실행 가능한 프로젝트를 만드는 전략가"/>
+<meta property="og:type" content="profile"/>
+<link rel="canonical" href="https://jbpak3123-pixel.github.io/park-jangbae-card/"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="theme-color" content="#1a3a5c"/>
+<meta property="og:image" content="https://jbpak3123-pixel.github.io/park-jangbae-card/og-image.jpg"/>
+<title>박장배 · 디지털 프로필</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="dns-prefetch" href="https://raw.githubusercontent.com"/>
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@300;400;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#f4f2ee;--surface:#fff;
+  --navy:#1a3a5c;--blue:#2563a8;--gold:#c9973a;--green:#16a34a;
+  --text:#1e1e1e;--muted:#6b7280;
+  --border:rgba(26,58,92,.13);--shadow:0 4px 32px rgba(26,58,92,.10);
+  --r:18px;
+  --sans:'Noto Sans KR',sans-serif;
+  --serif:'Noto Serif KR',serif;
+  --display:'DM Serif Display',serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.7;overflow-x:hidden;}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(244,242,238,.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);height:54px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;}
+.nav-logo{font-family:var(--serif);font-size:15px;font-weight:600;color:var(--navy);letter-spacing:.1em;}
+.nav-links{display:flex;gap:4px;list-style:none;}
+.nav-ham{display:none;background:none;border:none;cursor:pointer;padding:8px;color:var(--navy);font-size:20px;}
+.nav-ham:focus-visible{outline:2px solid #2563a8;outline-offset:2px;border-radius:4px;}
+.nav-links a{text-decoration:none;font-size:11.5px;font-weight:500;color:var(--muted);padding:8px 13px;border-radius:20px;transition:all .2s;}
+.nav-links a:hover,.nav-links a.active{background:var(--navy);color:#fff;}
+
+#hero{min-height:100vh;padding:80px 24px 60px;background:linear-gradient(155deg,#0f2540 0%,#1a3a5c 55%,#1e4570 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
+#hero::before{content:'';position:absolute;top:-150px;right:-150px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(201,151,58,.13) 0%,transparent 70%);}
+#hero::after{content:'';position:absolute;bottom:-100px;left:-100px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(46,109,164,.2) 0%,transparent 70%);}
+.hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:center;max-width:720px;width:100%;}
+.hero-photo{width:160px;height:160px;border-radius:50%;border:3px solid rgba(201,151,58,.6);background:url('https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_61.jpg') center/cover no-repeat;flex-shrink:0;box-shadow:0 0 40px rgba(0,0,0,.4);}
+.badge{display:inline-block;background:rgba(201,151,58,.18);border:1px solid rgba(201,151,58,.4);color:var(--gold);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;padding:4px 14px;border-radius:20px;margin-bottom:16px;}
+.hero-name{font-family:var(--serif);font-size:46px;font-weight:300;color:#fff;letter-spacing:.18em;line-height:1;margin-bottom:10px;}
+.hero-sub{font-size:13px;color:rgba(255,255,255,.7);letter-spacing:.07em;margin-bottom:6px;}
+.hero-roles{font-size:13px;color:rgba(255,255,255,.65);letter-spacing:.05em;margin-bottom:28px;}
+.hero-quote{background:rgba(255,255,255,.06);border-left:3px solid var(--gold);border-radius:0 10px 10px 0;padding:20px 24px;margin-bottom:28px;font-family:var(--display);font-size:17.5px;color:rgba(255,255,255,.88);line-height:1.85;font-weight:400;letter-spacing:.02em;}
+.btn-row{display:flex;gap:10px;flex-wrap:wrap;}
+.btn{display:inline-flex;align-items:center;gap:7px;padding:12px 26px;border-radius:50px;font-size:13.5px;font-weight:500;text-decoration:none;cursor:pointer;border:none;transition:all .22s;font-family:var(--sans);}
+.btn-g{background:var(--gold);color:#fff;}
+.btn-g:hover{background:#b8832a;transform:translateY(-2px);}
+.btn-o{background:transparent;color:rgba(255,255,255,.8);border:1px solid rgba(255,255,255,.3);}
+.btn-o:hover{background:rgba(255,255,255,.1);transform:translateY(-2px);}
+
+#expertise{padding:80px 24px;display:block;}
+.exp-wrap{max-width:720px;width:100%;}
+.sec-label{font-size:10.5px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:8px;}
+.sec-title{font-family:var(--display);font-size:34px;color:var(--navy);line-height:1.2;margin-bottom:10px;}
+.sec-guide{font-size:13px;color:var(--muted);margin-bottom:32px;line-height:1.7;}
+
+.domain-tabs{display:flex;flex-direction:column;gap:2px;}
+.domain-tab{background:var(--surface);border:1px solid var(--border);overflow:visible;transition:box-shadow .2s;}
+.domain-tab:first-child{border-radius:var(--r) var(--r) 0 0;}
+.domain-tab:last-child{border-radius:0 0 var(--r) var(--r);}
+.domain-tab.open{box-shadow:var(--shadow);}
+
+/* 탭0 — 현재직책 강조 스타일 */
+.domain-tab.tab-overview{background:linear-gradient(135deg,var(--navy) 0%,#1e4a72 100%);border-color:rgba(201,151,58,.3);}
+.domain-tab.tab-overview .tab-header:hover{background:rgba(255,255,255,.06);}
+.domain-tab.tab-overview .tab-num{color:var(--gold);}
+.domain-tab.tab-overview .tab-name{color:#fff;font-size:17px;}
+.domain-tab.tab-overview .tab-short{color:rgba(255,255,255,.55);}
+.domain-tab.tab-overview .tab-arrow{color:var(--gold);}
+.domain-tab.tab-overview.open .tab-arrow{color:var(--gold);}
+.domain-tab.tab-overview .tab-icon{background:rgba(201,151,58,.2);font-size:24px;}
+
+.tab-header{display:flex;align-items:center;gap:16px;padding:20px 24px;cursor:pointer;transition:background .2s;user-select:none;}
+.tab-header:hover{background:#faf9f6;}
+.tab-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;}
+.ic0{background:rgba(201,151,58,.15);}
+.ic1{background:rgba(201,151,58,.1);}
+.ic2{background:rgba(26,58,92,.08);}
+.ic3{background:rgba(34,197,94,.1);}
+.ic4{background:rgba(156,64,164,.1);}
+.tab-meta{flex:1;}
+.tab-num{font-size:10px;letter-spacing:.2em;color:var(--gold);font-weight:600;margin-bottom:2px;}
+.tab-name{font-size:16px;font-weight:700;color:var(--navy);}
+.tab-short{font-size:12px;color:var(--muted);margin-top:2px;}
+.tab-arrow{font-size:18px;color:var(--muted);transition:transform .3s;flex-shrink:0;transform:rotate(90deg);}
+.domain-tab.open .tab-arrow{transform:rotate(90deg);color:var(--navy);}
+.tab-body{display:block !important;border-top:1px solid var(--border);}
+.domain-tab.open 
+@keyframes slideDown{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+.tab-body-inner{padding:24px 24px 28px;}
+
+/* 탭0 바디 */
+.domain-tab.tab-overview .tab-body{border-top-color:rgba(255,255,255,.1);}
+.domain-tab.tab-overview .tab-body-inner{background:#fff;}
+
+.field-desc{font-family:var(--serif);font-size:15px;color:var(--navy);line-height:1.9;margin-bottom:20px;font-weight:300;}
+.sub-label{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);font-weight:600;margin:20px 0 12px;}
+
+/* 현재직책 카드 목록 */
+.overview-list{display:flex;flex-direction:column;gap:10px;margin-bottom:16px;}
+.overview-item{background:var(--bg);border-radius:12px;padding:16px 20px;border-left:4px solid var(--gold);}
+.overview-item-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+.overview-item-desc{font-size:12.5px;color:var(--muted);line-height:1.65;}
+
+.sub-list{list-style:none;margin-bottom:16px;display:flex;flex-direction:column;gap:10px;}
+.sub-list li{display:flex;align-items:flex-start;gap:12px;padding:14px 18px;background:var(--bg);border-radius:10px;border-left:3px solid var(--gold);}
+.li-title{font-weight:700;color:var(--navy);margin-bottom:3px;font-size:13.5px;}
+.li-desc{color:var(--muted);font-size:12.5px;line-height:1.7;}
+
+/* 4대역량 강조 배경 */
+.competency-list{list-style:none;margin-bottom:16px;display:flex;flex-direction:column;gap:8px;}
+.competency-list li{padding:16px 20px;border-radius:12px;border-left:4px solid var(--blue);}
+.competency-list li:nth-child(1){background:rgba(37,99,168,.07);}
+.competency-list li:nth-child(2){background:rgba(22,163,74,.07);border-left-color:var(--green);}
+.competency-list li:nth-child(3){background:rgba(201,151,58,.08);border-left-color:var(--gold);}
+.competency-list li:nth-child(4){background:rgba(156,64,164,.07);border-left-color:#9c40a4;}
+
+.tag-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px;}
+.tag{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:3px 11px;font-size:11.5px;color:var(--blue);font-weight:500;}
+.edit-note{font-size:11px;color:rgba(201,151,58,.8);letter-spacing:.06em;padding:10px 14px;background:rgba(201,151,58,.06);border-radius:8px;margin-top:16px;}
+
+/* 배지 */
+.badge-tag{display:inline-block;background:rgba(37,99,168,.1);border:1px solid rgba(37,99,168,.25);color:var(--blue);font-size:10px;font-weight:700;padding:2px 8px;border-radius:6px;margin-left:8px;vertical-align:middle;}
+.badge-tag.gold{background:rgba(201,151,58,.1);border-color:rgba(201,151,58,.3);color:#92400e;}
+
+/* 역임 배지 */
+.former{display:inline-block;background:var(--muted);color:#fff;font-size:10px;font-weight:700;padding:1px 7px;border-radius:4px;margin-left:6px;vertical-align:middle;opacity:.7;}
+
+/* 수상 카드 */
+.award-card{display:flex;align-items:center;gap:12px;border-radius:12px;padding:14px 18px;margin-bottom:10px;}
+.award-gold{background:rgba(201,151,58,.08);border:1px solid rgba(201,151,58,.25);}
+.award-blue{background:rgba(46,99,164,.06);border:1px solid rgba(46,99,164,.18);}
+.award-date{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;margin-bottom:3px;}
+.award-name{font-size:14px;font-weight:700;color:var(--navy);}
+.award-sub{font-size:12px;color:var(--muted);}
+
+/* Pioneer 박스 */
+.pioneer-box{background:linear-gradient(135deg,rgba(26,58,92,.06) 0%,rgba(46,99,164,.08) 100%);border:1.5px solid rgba(46,99,164,.3);border-radius:16px;padding:24px;margin-bottom:24px;position:relative;overflow:hidden;}
+.pioneer-box::before{content:'';position:absolute;top:0;right:0;width:100px;height:100px;background:rgba(46,99,164,.07);border-radius:0 0 0 100px;pointer-events:none;}
+.pioneer-badge{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:14px;}
+.pioneer-headline{font-size:20px;font-weight:700;color:var(--navy);font-family:var(--serif);line-height:1.4;margin-bottom:12px;}
+.pioneer-desc{font-size:13px;color:var(--muted);line-height:1.85;margin-bottom:20px;}
+.quote-card{background:rgba(255,255,255,.8);border-radius:10px;padding:14px 18px;margin-bottom:10px;}
+.quote-source{font-size:11px;font-weight:600;letter-spacing:.1em;margin-bottom:6px;}
+.quote-text{font-size:13px;color:var(--navy);line-height:1.7;font-family:var(--serif);font-style:italic;}
+.quote-attr{font-size:11px;color:var(--muted);margin-top:6px;}
+
+/* 타임라인 */
+.tl-wrap{display:flex;flex-direction:column;border-left:2px solid rgba(34,197,94,.3);padding-left:20px;margin-bottom:16px;}
+.tl-wrap-blue{border-left-color:rgba(46,99,164,.3);}
+.tl-wrap-gold{border-left-color:rgba(201,151,58,.4);}
+.tl-item{position:relative;padding-bottom:16px;}
+.tl-item:last-child{padding-bottom:0;}
+.tl-dot{position:absolute;left:-25px;top:4px;width:8px;height:8px;border-radius:50%;}
+.tl-date{font-size:11px;font-weight:600;letter-spacing:.08em;margin-bottom:3px;}
+.tl-title{font-size:13px;font-weight:700;color:var(--navy);}
+.tl-desc{font-size:12px;color:var(--muted);line-height:1.6;}
+
+/* 3박스 */
+.box3{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin-bottom:24px;}
+.box3-item{border-radius:12px;padding:16px;text-align:center;}
+.box3-icon{font-size:26px;margin-bottom:6px;}
+.box3-lbl{font-size:10.5px;font-weight:700;letter-spacing:.1em;margin-bottom:4px;}
+.box3-val{font-size:12.5px;font-weight:700;color:var(--navy);}
+
+/* 사진 그리드 */
+.photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px;}
+.photo-card{background:var(--bg);border-radius:12px;overflow:hidden;border:1px solid var(--border);}
+.photo-card-body{padding:9px 13px;}
+.photo-school{font-size:12px;font-weight:700;color:var(--navy);}
+.photo-loc{font-size:11px;color:var(--muted);}
+
+/* 신기술인증 사진 3열 */
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:8px;margin-bottom:16px;border-radius:12px;overflow:hidden;}
+.cert-grid img{width:100%;height:110px;object-fit:cover;display:block;}
+
+/* 납품 배지 */
+.supply-wrap{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px;}
+.sp-elem{border-radius:8px;padding:4px 11px;font-size:11.5px;font-weight:500;}
+.sp-green{background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);color:#166534;}
+.sp-blue{background:rgba(46,99,164,.08);border:1px solid rgba(46,99,164,.2);color:#1e3a5f;}
+.sp-gold{background:rgba(201,151,58,.1);border:1px solid rgba(201,151,58,.25);color:#92400e;}
+
+#contact{padding:40px 24px;background:linear-gradient(160deg,#0f2540 0%,#1a3a5c 100%);display:flex;align-items:center;justify-content:center;}
+.contact-wrap{max-width:720px;width:100%;}
+.c-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:32px;}
+.c-item{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:18px 22px;display:flex;align-items:center;gap:14px;text-decoration:none;transition:all .2s;}
+.c-item:hover{background:rgba(255,255,255,.12);transform:translateY(-2px);}
+.c-type{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;}
+.c-val{font-size:13.5px;color:rgba(255,255,255,.85);font-weight:300;}
+.c-foot{text-align:center;padding-top:28px;border-top:1px solid rgba(255,255,255,.1);}
+.c-foot-q{font-family:var(--serif);font-size:13px;color:rgba(255,255,255,.45);margin-bottom:20px;letter-spacing:.04em;}
+.c-copy{font-size:11px;color:rgba(255,255,255,.2);margin-top:28px;letter-spacing:.12em;}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.visible{opacity:1;transform:none;}
+
+@media(max-width:600px){
+  .hero-inner{grid-template-columns:1fr;text-align:center;gap:28px;}
+  .hero-photo{margin:0 auto;width:130px;height:130px;}
+  .btn-row{justify-content:center;}
+  .c-grid,.box3,.photo-grid,.cert-grid{grid-template-columns:1fr;}
+  .nav-ham{display:block;}
+  .nav-links{display:none;position:fixed;top:48px;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:8px 0;box-shadow:0 4px 16px rgba(0,0,0,.12);z-index:200;}
+  .nav-links.open{display:flex;}
+  .nav-links li a{display:block;padding:13px 24px;font-size:14px;border-bottom:.5px solid #eee;}
+  .hero-name{font-size:34px;}
+  .sec-title{font-size:26px;}
+}
+
+/* ── QR 플로팅 버튼 ── */
+.qr-float{
+  position:fixed;bottom:24px;right:24px;z-index:300;
+  background:var(--gold);color:#fff;border:none;border-radius:50px;
+  padding:12px 22px;font-size:13px;font-weight:600;cursor:pointer;
+  font-family:var(--sans);letter-spacing:.04em;
+  box-shadow:0 4px 24px rgba(201,151,58,.45);
+  display:flex;align-items:center;gap:8px;transition:all .22s;
+}
+.qr-float:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(201,151,58,.55);}
+
+/* ── QR 모달 오버레이 ── */
+.qr-overlay{
+  display:none;position:fixed;inset:0;z-index:400;
+  background:rgba(10,20,40,.85);backdrop-filter:blur(8px);
+  align-items:center;justify-content:center;padding:20px;
+}
+.qr-overlay.show{display:flex;}
+
+/* ── QR 모달 카드 ── */
+.qr-card{
+  position:relative;
+  background:linear-gradient(145deg,#0f2540 0%,#1a3a5c 60%,#1e4570 100%);
+  border:1px solid rgba(255,255,255,.13);border-radius:24px;
+  padding:36px 32px 32px;max-width:400px;width:100%;
+  box-shadow:0 24px 80px rgba(0,0,0,.55);
+}
+.qr-card::before,.qr-card::after{content:'';position:absolute;width:20px;height:20px;border-color:var(--gold);border-style:solid;}
+.qr-card::before{top:14px;left:14px;border-width:1.5px 0 0 1.5px;}
+.qr-card::after{bottom:14px;right:14px;border-width:0 1.5px 1.5px 0;}
+.qr-c-tr{position:absolute;top:14px;right:14px;width:20px;height:20px;border:1.5px solid var(--gold);border-left:none;border-bottom:none;}
+.qr-c-bl{position:absolute;bottom:14px;left:14px;width:20px;height:20px;border:1.5px solid var(--gold);border-right:none;border-top:none;}
+
+.qr-close{
+  position:absolute;top:16px;right:16px;
+  background:rgba(255,255,255,.1);border:none;color:rgba(255,255,255,.7);
+  width:32px;height:32px;border-radius:50%;font-size:16px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;transition:all .2s;z-index:10;
+}
+.qr-close:hover{background:rgba(255,255,255,.2);}
+
+/* QR 카드 내부 */
+.qr-header{display:flex;align-items:center;gap:16px;margin-bottom:20px;}
+.qr-photo{
+  width:72px;height:72px;border-radius:50%;flex-shrink:0;
+  border:2px solid rgba(201,151,58,.6);
+  background:var(--bg);
+  box-shadow:0 0 16px rgba(0,0,0,.3);
+}
+.qr-name-label{font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:6px;}
+.qr-name{font-family:var(--serif);font-size:26px;font-weight:300;color:#fff;letter-spacing:.18em;line-height:1;margin-bottom:4px;}
+.qr-name-en{font-size:9.5px;color:rgba(255,255,255,.35);letter-spacing:.16em;text-transform:uppercase;}
+.qr-divider{width:100%;height:1px;background:linear-gradient(90deg,var(--gold),transparent);margin-bottom:20px;}
+
+.qr-section{margin-bottom:18px;}
+.qr-scan-label{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:12px;font-weight:500;}
+.qr-wrap{background:#fff;border-radius:16px;padding:14px;display:inline-block;box-shadow:0 0 36px rgba(201,151,58,.18),0 8px 28px rgba(0,0,0,.25);}
+#qrcode canvas,#qrcode img{border-radius:8px;display:block;}
+.qr-scan-hint{font-size:10.5px;color:rgba(255,255,255,.35);margin-top:10px;letter-spacing:.04em;text-align:center;}
+
+.qr-contacts{display:flex;flex-direction:column;gap:7px;margin-bottom:16px;}
+.qr-c-row{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:10px;padding:9px 13px;text-decoration:none;transition:background .2s;}
+.qr-c-row:hover{background:rgba(255,255,255,.1);}
+.qr-c-icon{font-size:14px;flex-shrink:0;}
+.qr-c-type{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:1px;}
+.qr-c-val{font-size:12px;color:rgba(255,255,255,.8);font-weight:300;}
+
+.qr-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px;justify-content:center;}
+.qr-tag{background:rgba(201,151,58,.13);border:1px solid rgba(201,151,58,.28);border-radius:20px;padding:3px 10px;font-size:10px;color:rgba(255,255,255,.6);}
+
+/* URL 입력 */
+.qr-url-box{background:rgba(201,151,58,.1);border:1px solid rgba(201,151,58,.3);border-radius:12px;padding:12px 16px;margin-bottom:16px;text-align:center;}
+.qr-url-title{font-size:9.5px;color:var(--gold);letter-spacing:.15em;font-weight:600;margin-bottom:5px;}
+.qr-url-desc{font-size:11px;color:rgba(255,255,255,.55);line-height:1.6;margin-bottom:8px;}
+.qr-url-input{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:7px;padding:7px 11px;width:100%;font-size:11.5px;color:#fff;font-family:var(--sans);outline:none;text-align:center;}
+.qr-url-input::placeholder{color:rgba(255,255,255,.3);}
+.qr-url-btn{background:var(--gold);color:#fff;border:none;border-radius:7px;padding:8px 0;font-size:12px;font-weight:600;cursor:pointer;font-family:var(--sans);margin-top:7px;width:100%;transition:all .2s;}
+.qr-url-btn:hover{background:#b8832a;}
+
+.qr-footer{text-align:center;font-size:9px;color:rgba(255,255,255,.18);letter-spacing:.12em;}
+
+@media(max-width:480px){
+  .qr-card{padding:28px 20px 24px;}
+  .qr-float{bottom:16px;right:16px;padding:10px 16px;font-size:12px;}
+}
+
+/* CTA 카드 */
+.cta-card{display:flex;flex-direction:column;align-items:center;text-align:center;padding:24px 16px;background:var(--bg);border:1px solid var(--border);border-radius:var(--r);text-decoration:none;transition:all .2s;cursor:pointer;}
+.cta-card:hover{background:#fff;box-shadow:var(--shadow);transform:translateY(-3px);border-color:var(--gold);}
+.cta-icon{font-size:28px;margin-bottom:10px;}
+.cta-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px;}
+.cta-desc{font-size:12px;color:var(--muted);line-height:1.5;}
+
+/* 갤러리 */
+.gallery-sub{font-size:11.5px;font-weight:700;color:var(--navy);letter-spacing:.06em;margin:16px 0 8px;}
+.gallery-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(90px,1fr));gap:4px;margin-bottom:4px;}
+.gallery-row img{width:100%;height:110px;object-fit:cover;border-radius:8px;display:block;}
+
+/* 섹션 끝 CTA */
+.section-cta{background:linear-gradient(135deg,rgba(26,58,92,.06),rgba(46,99,164,.08));border:1px solid rgba(46,99,164,.2);border-radius:12px;padding:16px 20px;margin-top:20px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+.section-cta-text{font-size:13px;color:var(--navy);font-weight:500;}
+.section-cta-btn{background:var(--navy);color:#fff;border:none;border-radius:50px;padding:9px 20px;font-size:12.5px;font-weight:600;cursor:pointer;font-family:var(--sans);text-decoration:none;transition:all .2s;white-space:nowrap;}
+.section-cta-btn:hover{background:var(--blue);transform:translateY(-1px);}
+
+/* 뉴스 카드 */
+.news-card{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin-bottom:10px;text-decoration:none;display:flex;align-items:flex-start;gap:12px;transition:all .2s;}
+.news-card:hover{background:#fff;box-shadow:var(--shadow);}
+.news-date{font-size:10px;color:var(--gold);font-weight:600;letter-spacing:.1em;margin-bottom:4px;}
+.news-title{font-size:13.5px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+.news-src{font-size:11px;color:var(--muted);}
+
+/* 비디오 플레이어 */
+.video-wrap{position:relative;border-radius:12px;overflow:hidden;cursor:pointer;margin-bottom:16px;}
+.video-wrap video{width:100%;display:block;border-radius:12px;}
+.video-wrap .play-overlay{position:absolute;inset:0;background:rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center;transition:opacity .2s;}
+.video-wrap:hover .play-overlay{opacity:.7;}
+.play-btn{width:64px;height:64px;background:rgba(255,255,255,.9);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;}
+
+@media(max-width:600px){
+  #cta > div > div{grid-template-columns:1fr;}
+  .section-cta{flex-direction:column;text-align:center;}
+}
+
+/* ── 아코디언 통합 CSS ── */
+.acc-wrap{width:100%;display:flex;flex-direction:column;gap:10px;margin-top:32px;}
+.acc-item{background:#fff;border-radius:12px;border:1px solid rgba(26,58,92,.13);
+  box-shadow:0 2px 12px rgba(26,58,92,.07);overflow:hidden;width:100%;display:block;}
+.acc-header{display:flex;align-items:center;gap:14px;padding:18px 24px;
+  cursor:pointer;user-select:none;transition:filter .2s;}
+.acc-header:hover{filter:brightness(1.1);}
+.acc-icon{font-size:22px;flex-shrink:0;}
+.acc-title{flex:1;font-size:15px;font-weight:700;color:#fff;line-height:1.3;}
+.acc-arrow{font-size:20px;color:rgba(255,255,255,.8);transition:transform .3s;flex-shrink:0;}
+.acc-item.open .acc-arrow{transform:rotate(90deg);}
+.acc-body{display:none;border-top:1px solid rgba(26,58,92,.1);}
+.acc-item.open .acc-body{display:block;}
+.acc-body-inner{padding:24px 24px 28px;}
+@media(max-width:600px){
+  .acc-header{padding:14px 16px;}
+  .acc-title{font-size:13px;}
+  .acc-body-inner{padding:16px;}
+}
+
+
+/* ════════════════════════════════
+   스마트폰 최적화 (768px 이하)
+════════════════════════════════ */
+@media(max-width:768px){
+
+  /* ── Nav ── */
+  nav{height:48px;padding:0 16px;}
+  .nav-logo{font-size:14px;}
+  .nav-links{display:none;}
+
+  /* ── Hero ── */
+  #hero{padding:68px 20px 48px;min-height:auto;}
+  .hero-inner{grid-template-columns:1fr;text-align:center;gap:20px;max-width:100%;}
+  .hero-photo{width:110px;height:110px;margin:0 auto;}
+  .hero-name{font-size:36px;letter-spacing:.12em;}
+  .hero-sub{font-size:12px;}
+  .hero-roles{font-size:12px;}
+  .hero-quote{font-size:14px;padding:14px 18px;line-height:1.75;text-align:left;}
+  .btn-row{justify-content:center;gap:8px;flex-wrap:wrap;}
+  .btn{padding:10px 18px;font-size:12.5px;}
+
+  /* ── Expertise ── */
+  #expertise{padding:48px 16px;}
+  #expertise > div{padding:0;}
+  .sec-title{font-size:24px !important;line-height:1.3;}
+  .sec-label{font-size:10px;}
+  .sec-guide{font-size:12px;margin-bottom:20px;}
+  .acc-wrap{gap:8px;margin-top:20px;}
+  .acc-header{padding:14px 16px;gap:10px;}
+  .acc-icon{font-size:19px;}
+  .acc-title{font-size:13.5px;}
+  .acc-body-inner{padding:16px;}
+
+  /* ── 탭 내부 콘텐츠 ── */
+  .field-desc{font-size:13px;line-height:1.8;}
+  .sub-label{font-size:11px;margin:14px 0 8px;}
+  .sub-list li{padding:10px 14px;}
+  .li-title{font-size:12.5px;}
+  .li-desc{font-size:11.5px;}
+  .gallery-row{grid-template-columns:repeat(auto-fill,minmax(75px,1fr));}
+  .gallery-sub{font-size:11px;margin:12px 0 6px;}
+  .tl-wrap{padding-left:14px;}
+  .tl-title{font-size:12.5px;}
+  .tl-desc{font-size:11.5px;}
+  .tag-row{gap:4px;}
+  .tag{font-size:10.5px;padding:3px 9px;}
+  .award-card{padding:10px 14px;}
+  .award-name{font-size:13px;}
+  .box3{grid-template-columns:1fr !important;}
+  .photo-grid{grid-template-columns:1fr !important;}
+  .cert-grid{grid-template-columns:1fr 1fr !important;}
+  .supply-wrap{gap:4px;}
+  .sp-elem{font-size:10.5px;padding:3px 8px;}
+  .kpi-grid{grid-template-columns:1fr 1fr !important;}
+  .pioneer-headline{font-size:17px;}
+  .pioneer-desc{font-size:12px;}
+  .quote-text{font-size:12px;}
+  .news-card{padding:12px 14px;}
+  .news-title{font-size:12.5px;}
+  .overview-item{padding:12px 14px;}
+  .overview-item-title{font-size:13px;}
+  .overview-item-desc{font-size:11.5px;}
+
+  /* ── CTA 섹션 ── */
+  #cta{padding:32px 16px;}
+  #cta > div > div{grid-template-columns:1fr 1fr !important;gap:10px;}
+  .cta-card{padding:16px 10px;}
+  .cta-icon{font-size:22px;}
+  .cta-title{font-size:13px;}
+  .cta-desc{font-size:11px;}
+
+  /* ── Contact ── */
+  #contact{padding:32px 16px;}
+  .contact-wrap{padding:0;}
+  .c-grid{grid-template-columns:1fr !important;gap:8px;}
+  .c-item{padding:12px 16px;}
+  .c-val{font-size:12.5px;}
+  .c-type{font-size:9px;}
+  .c-copy{font-size:10px;}
+  .sec-title[style]{font-size:22px !important;}
+
+  /* ── 문의 모달 ── */
+  #inquiryOverlay > div{padding:24px 20px;margin:0 8px;}
+  #inquiryOverlay .btn-row{flex-direction:column;}
+
+  /* ── QR 플로팅 버튼 ── */
+  .qr-float{bottom:14px;right:14px;padding:10px 16px;font-size:12px;}
+
+  /* ── 갤러리 사진 높이 ── */
+  .gallery-row img{height:90px !important;aspect-ratio:4/3;}
+}
+
+/* ── 아주 작은 화면 (360px 이하) ── */
+@media(max-width:360px){
+  .hero-name{font-size:30px;}
+  .btn{padding:9px 14px;font-size:11.5px;}
+  .acc-title{font-size:12.5px;}
+  #cta > div > div{grid-template-columns:1fr !important;}
+}
+
+
+/* ── 키보드 포커스 ── */
+:focus-visible{outline:2px solid #2563a8;outline-offset:2px;border-radius:4px;}
+button:focus-visible,a:focus-visible{outline:2px solid #2563a8;outline-offset:3px;}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-logo">박장배</div>
+  <button type="button" class="nav-ham" id="navHam" aria-label="메뉴 열기" aria-expanded="false">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero" class="active">홈</a></li>
+    <li><a href="#expertise">핵심역량</a></li>
+    <li><a href="#contact">연락처</a></li>
+  </ul>
+</nav>
+<section id="hero">
+  <div style="position:absolute;top:-150px;right:-150px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(201,151,58,.13) 0%,transparent 70%);pointer-events:none;"></div>
+  <div style="position:absolute;bottom:-100px;left:-100px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(46,109,164,.2) 0%,transparent 70%);pointer-events:none;"></div>
+  <div class="hero-inner" style="position:relative;z-index:1;">
+    <div class="hero-photo" style="background:url('https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_62.jpg') center/cover no-repeat;"></div>
+    <div class="hero-text">
+      <div class="badge">Digital Profile · 박장배</div>
+      <div class="hero-name">박 장 배</div>
+      <div class="hero-sub">대표 · 기획자 · 미술작가(서양화)</div>
+      <div class="hero-roles">사업전략수립 / 문화예술사업 / ESG연계사업</div>
+      <div class="hero-quote">· 사람 · 조직 · 사업을 연결하고 실행가능한<br/>&nbsp;&nbsp;프로젝트를 만드는 기획형 전략가<br/>
+      · 문화예술 · ESG · 공공사업 · 개인정보 보호<br/>&nbsp;&nbsp;분야의 실행형 기획 및 사업전략 전문가</div>
+      <div class="btn-row">
+        <a href="tel:01023373123" class="btn btn-g">📞 전화 걸기</a>
+        <a href="mailto:jbpak3123@hanmail.net" class="btn btn-o">✉️ 이메일</a>
+        <button type="button" onclick="downloadVCard()" class="btn btn-o" style="border-color:rgba(201,151,58,.5);color:var(--gold);">📋 연락처 저장</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="expertise" class="reveal" style="padding:80px 24px;background:var(--bg);">
+  <div style="max-width:720px;margin:0 auto;">
+    <div>
+      <div class="sec-label">Expertise</div>
+      <div class="sec-title">박장배의 활동분야별 직책 및 핵심역량</div>
+      <div class="sec-guide">하단의 5가지 부문별 역량을 클릭하시면 세부사항을 확인할 수 있습니다.</div>
+    </div>
+    <div class="acc-wrap">
+<div class="acc-item reveal" id="acc0">
+      <div class="acc-header" style="background:#1a3a5c;" onclick="toggleAcc(0)">
+        <span class="acc-icon">🏢</span>
+        <div class="acc-title">현재 직책 및 활동분야</div>
+        <span class="acc-arrow">›</span>
+      </div>
+      <div class="acc-body">
+        <div class="acc-body-inner">
+            <div class="overview-list">
+              <div class="overview-item">
+                <div class="overview-item-title">강동미협 회장 · 한국미협 강동지부장</div>
+                <div class="overview-item-desc">지역 미술 작가 네트워크 구축, 정기 전시 기획 및 협회 행정 총괄. 강동구 문화예술 정책 연계.<br/>미술 작품 전시활동 및 작품판매</div>
+              </div>
+              <div class="overview-item">
+                <div class="overview-item-title">㈜그린코스랩 대표이사</div>
+                <div class="overview-item-desc">화장품 제조·판매 법인 설립 및 경영 총괄. AI 기반 홈페이지 구축, 브랜드 포지셔닝 및 시장 진입 전략 직접 실행.</div>
+              </div>
+              <div class="overview-item">
+                <div class="overview-item-title">케어기버마음살림 사회적협동조합 부이사장</div>
+                <div class="overview-item-desc">돌봄 분야 사회적협동조합 경영 참여. 운영 구조 설계 및 복지 서비스 사업 모델 개발.</div>
+              </div>
+              <div class="overview-item">
+                <div class="overview-item-title">㈜에이디소프트 부사장</div>
+                <div class="overview-item-desc">CCTV영상 개인정보 보호를 위한 실시간 비식별처리(모자이크처리) 솔루션 보급사업 총괄</div>
+              </div>
+              <div class="overview-item">
+                <div class="overview-item-title">한국섬유자원순환협회 정책자문</div>
+                <div class="overview-item-desc">섬유폐기물 재활용 사업체계 구축·신규시장 개발·협회운영정책 자문. ㈜금용 협력기반 사업모델구축 및 기후부 정책연계 사업 기획</div>
+              </div>
+              <div class="overview-item">
+                <div class="overview-item-title">(사)대한전통예술보존회 기획이사</div>
+                <div class="overview-item-desc">전통예술 보존·진흥 사업 기획. 전통과 현대를 잇는 문화예술 프로그램 설계.</div>
+              </div>
+            </div>
+          </div>
+    </div></div>
+<div class="acc-item reveal" id="acc1">
+      <div class="acc-header" style="background:#c9973a;" onclick="toggleAcc(1)">
+        <span class="acc-icon">🎨</span>
+        <div class="acc-title">문화예술 전문가</div>
+        <span class="acc-arrow">›</span>
+      </div>
+      <div class="acc-body">
+        <div class="acc-body-inner">
+            <div class="field-desc">개인전 5회, 단체전·그룹전 200여 회의 창작 경력을 바탕으로 미술 창작·교육·기관 운영을 아우르는 문화예술 전문가입니다.</div>
+
+            <div class="sub-label">현재 직책</div>
+            <ul class="sub-list">
+              <li><div><div class="li-title">강동미협 회장 · 한국미협 강동지부장</div><div class="li-desc">지역 미술 작가 네트워크 구축, 정기 전시 기획 및 협회 행정 총괄. 강동구 문화예술 정책 연계.</div></div></li>
+              <li><div><div class="li-title">(사)대한전통예술보존회 기획이사</div><div class="li-desc">전통예술 보존·진흥 사업 기획. 전통과 현대를 잇는 문화예술 프로그램 설계.</div></div></li>
+              <li><div><div class="li-title">삼익아트홀 미술인문학 전임교수 <span class="former">역임</span></div><div class="li-desc">미술·인문학 융합 교육 프로그램 운영.</div></div></li>
+              <li><div><div class="li-title">금호아시아나인재개발원 전임교수 <span class="former">역임</span></div><div class="li-desc">기업 임직원 대상 미술인문학 강의.</div></div></li>
+              <li><div><div class="li-title">강동구 환경작품 학생 공모전 심사위원장 <span class="former">역임</span></div><div class="li-desc">환경 주제 학생 미술 공모전 심사 총괄.</div></div></li>
+              <li><div><div class="li-title">강동미술인상 운영 위원장 <span class="former">역임</span></div><div class="li-desc">강동 지역 미술인 공로 발굴·포상 체계 운영.</div></div></li>
+            </ul>
+
+            <!-- 활동 사진 갤러리 -->
+            
+            <!-- 2025 한강의흐름전 -->
+            <div class="gallery-sub">🎨 2025년 한강의흐름전</div><div class="gallery-row"><div style="flex:1;min-width:0;"><img alt="박장배 프로필 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_01.jpg" style="width:100%;height:130px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="박장배 프로필 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_02.jpg" style="width:100%;height:130px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="박장배 프로필 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_03.jpg" style="width:100%;height:130px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div></div><div class="gallery-row"><div style="flex:1;min-width:0;"><img alt="박장배 프로필 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_04.jpg" style="width:100%;height:130px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="박장배 프로필 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_05.jpg" style="width:100%;height:130px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div></div>
+
+            <!-- 강동미술인상 재정·운영 -->
+            <div class="gallery-sub">🏅 강동미술인상 재정·운영</div><div class="gallery-row"><div style="flex:1;min-width:0;"><img alt="강동미술협회 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_06.jpg" style="width:100%;height:130px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="강동미술협회 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_07.jpg" style="width:100%;height:130px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div></div>
+
+            <!-- 2025년 송년기획전 -->
+            <div class="gallery-sub">🖼️ 2025년 강동미술협회 송년기획전</div><div class="gallery-row"><div style="flex:1;min-width:0;"><img alt="강동미술협회 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_08.jpg" style="width:100%;height:130px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="강동미술협회 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_09.jpg" style="width:100%;height:130px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="삐삐솔루션 현장 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_10.jpg" style="width:100%;height:130px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div></div><div class="gallery-row"><div style="flex:1;min-width:0;"><img alt="삐삐솔루션 현장 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_11.jpg" style="width:100%;height:130px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="삐삐솔루션 현장 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_12.jpg" style="width:100%;height:130px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="삐삐솔루션 현장 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_13.jpg" style="width:100%;height:130px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div></div>
+            <div class="gallery-sub">🌸 2026년 모란꽃사생회 &amp; 회원야유회</div><div class="gallery-row"><div style="flex:1;min-width:0;"><img alt="삐삐솔루션 현장 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_14.jpg" style="width:100%;height:120px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="삐삐솔루션 현장 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_15.jpg" style="width:100%;height:120px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="삐삐솔루션 현장 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_16.jpg" style="width:100%;height:120px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="삐삐솔루션 현장 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_17.jpg" style="width:100%;height:120px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div></div><div class="gallery-row"><div style="flex:1;min-width:0;"><img alt="삐삐솔루션 현장 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_18.jpg" style="width:100%;height:120px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="삐삐솔루션 현장 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_19.jpg" style="width:100%;height:120px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="문화예술 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_20.jpg" style="width:100%;height:120px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="문화예술 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_21.jpg" style="width:100%;height:120px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div></div>
+            <div class="gallery-sub">🎤 강의 활동 — 명화해설사 양성교육 · 커뮤니티 · 강연</div><div class="gallery-row"><div style="flex:1;min-width:0;"><img alt="문화예술 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_22.jpg" style="width:100%;height:105px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="문화예술 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_23.jpg" style="width:100%;height:105px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="문화예술 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_24.jpg" style="width:100%;height:105px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="문화예술 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_25.jpg" style="width:100%;height:105px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div></div><div class="gallery-row"><div style="flex:1;min-width:0;"><img alt="문화예술 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_26.jpg" style="width:100%;height:105px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="문화예술 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_27.jpg" style="width:100%;height:105px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="문화예술 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_28.jpg" style="width:100%;height:105px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="문화예술 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_29.jpg" style="width:100%;height:105px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div></div><div class="gallery-row"><div style="flex:1;min-width:0;"><img alt="문화예술 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_30.jpg" style="width:100%;height:105px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="문화예술 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_31.jpg" style="width:100%;height:105px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="문화예술 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_32.jpg" style="width:100%;height:105px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="문화예술 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_33.jpg" style="width:100%;height:105px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div></div><div class="gallery-row"><div style="flex:1;min-width:0;"><img alt="문화예술 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_34.jpg" style="width:100%;height:105px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div></div>
+            <div class="sub-label">수상 경력</div>
+            <div class="award-card award-gold"><span style="font-size:22px">🥇</span><div><div class="award-date" style="color:var(--gold)">2014</div><div class="award-name">44회 충남미술대전 종합대상</div></div></div>
+            <div class="award-card award-gold"><span style="font-size:22px">🏅</span><div><div class="award-date" style="color:var(--gold)">2013</div><div class="award-name">현대조형미술대전 입선 · 43회 충남미술대전 특선</div></div></div>
+            <div class="award-card award-blue"><span style="font-size:22px">🎨</span><div><div class="award-date" style="color:var(--blue)">2018</div><div class="award-name">㈜쉴드물감 후원 작가 선정</div></div></div>
+
+            
+            
+        </div>
+      </div>
+    </div></div>
+<div class="acc-item reveal" id="acc2">
+      <div class="acc-header" style="background:#2563a8;" onclick="toggleAcc(2)">
+        <span class="acc-icon">📋</span>
+        <div class="acc-title">사업기획·마케팅전략 및 시장개발 전문가</div>
+        <span class="acc-arrow">›</span>
+      </div>
+      <div class="acc-body">
+        <div class="acc-body-inner">
+            <div class="field-desc">정책·사업·조직을 연결해 실제로 작동하는 구조를 설계하고 실행까지 완결하는 실무형 전략가. 제도 활용·현장 실행·이해관계 조정을 통합하는 사업기획자입니다.</div>
+
+            <div class="sub-label">4대 핵심 역량</div>
+            <ul class="competency-list">
+              <li><div class="li-title">□ 현실 기반 기획력</div><div class="li-desc">단순 아이디어가 아닌 <strong>실행 가능한 사업모델</strong> 중심으로 설계. 시장·비용·운영까지 고려한 현실적 구조 설계 능력.</div></li>
+              <li><div class="li-title">□ 정책·제도 활용 역량</div><div class="li-desc">정책과 규제를 <strong>사업 기회로 전환</strong>. 공공제도·법적 구조를 활용해 리스크를 수익 구조로 전환하는 전략 설계.</div></li>
+              <li><div class="li-title">□ 다자 이해관계 설계 능력</div><div class="li-desc">협회·기업·공공기관·투자자·사용자 등 다양한 이해관계자를 구조적으로 연결. <strong>상호 이익으로 작동하는 구조</strong> 설계.</div></li>
+              <li><div class="li-title">□ 실무 중심 실행력</div><div class="li-desc">기획에 그치지 않고 실제 실행까지 연결. 문서 작성·협상 구조 설계·행정 절차·법적 대응까지 포함한 <strong>통합 기획 역량</strong>.</div></li>
+            </ul>
+
+            <div class="sub-label">주요 사업 사례</div>
+            <ul class="sub-list">
+              <li><div><div class="li-title">㈜그린코스랩 <span class="badge-tag">법인설립·운용</span></div><div class="li-desc">화장품 제조·판매 법인 설립 및 경영 총괄. AI 기반 홈페이지 구축, 브랜드 포지셔닝 및 시장 진입 전략 직접 실행.</div></div></li>
+              <li><div><div class="li-title">케어기버마음살림 사회적협동조합 설립 기초수립</div><div class="li-desc">돌봄 분야 사회적협동조합 경영 참여. 운영 구조 설계 및 복지 서비스 사업 모델 개발.</div></div></li>
+              <li><div><div class="li-title">재가복지센터 설립 기획</div><div class="li-desc">명성 실버케어 재가복지센터 인허가·사업계획서·운영 모델 수립 전 과정 기획 지원.</div></div></li>
+              <li><div><div class="li-title">한국문화예술발전협회 공모사업</div><div class="li-desc">협회 기반 정부 공모사업 수주 전략 수립 및 시니어 모델 사업 연계 구조 설계.</div></div></li>
+              <li><div><div class="li-title">섬유폐기물 친환경·재활용 처리 사업</div><div class="li-desc">섬유폐기물 재활용·친환경 처리 및 제품제조 등 ESG경영 사업모델 개발 및 정책공모사업</div></div></li>
+              <li><div><div class="li-title">🌍 밀라노·로마 국제 시니어 패션쇼 기획</div><div class="li-desc">리앙 디자이너와 협업, 시니어 모델을 주인공으로 한 국제 패션쇼 기획. 한국 문화예술 세계화 추진.</div></div></li>
+            </ul>
+
+            <!-- KDB 인터넷보험 파이오니어 -->
+            <div class="pioneer-box">
+              <div class="pioneer-badge">🏆 국내 최초 · 다수 언론 검증 성과</div>
+              <div class="pioneer-headline">생명보험업계 최초<br/>인터넷보험 채널 구축 &amp; 온라인 시장 선도</div>
+              <div class="pioneer-desc">2012년 KDB생명 <strong style="color:var(--navy)">다이렉트사업팀장</strong>으로서 국내 <strong style="color:var(--navy)">생명보험업계 최초의 인터넷보험 판매 채널</strong>을 기획·구축. 이후 <strong style="color:var(--navy)">5년 연속 업계 1위</strong>로 성장시켰습니다.</div>
+              <div style="display:flex;flex-direction:column;gap:8px;">
+                <a href="https://v.daum.net/v/20131119173311575" target="_blank" rel="noopener" class="news-card" style="text-decoration:none;">
+                  <div style="font-size:20px;flex-shrink:0;">📄</div>
+                  <div>
+                    <div class="news-date">2013.11.19 · 파이낸셜뉴스</div>
+                    <div class="news-title">[fn 이사람] KDB생명 다이렉트사업팀 박장배 팀장</div>
+                    <div class="news-src">원문 기사 보기 →</div>
+                  </div>
+                </a>
+                <a href="https://v.daum.net/v/20160111161634339" target="_blank" rel="noopener" class="news-card" style="text-decoration:none;">
+                  <div style="font-size:20px;flex-shrink:0;">📄</div>
+                  <div>
+                    <div class="news-date">2016.01.11 · 세계일보</div>
+                    <div class="news-title">[인터뷰] KDB생명, 온라인 누적 판매 1위 비결은?</div>
+                    <div class="news-src">원문 기사 보기 →</div>
+                  </div>
+                </a>
+                <a href="https://v.daum.net/v/20160909130103512" target="_blank" rel="noopener" class="news-card" style="text-decoration:none;">
+                  <div style="font-size:20px;flex-shrink:0;">📄</div>
+                  <div>
+                    <div class="news-date">2016.09.09 · 이데일리</div>
+                    <div class="news-title">KDB생명, 무해지환급형 암보험 'KDB다이렉트 암보험' 출시</div>
+                    <div class="news-src">원문 기사 보기 →</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="sub-label">주요 경력 이력</div>
+            <div class="tl-wrap tl-wrap-blue">
+              <div class="tl-item"><div class="tl-dot" style="background:var(--blue)"></div><div class="tl-date" style="color:var(--blue)">2012 – 2018</div><div class="tl-title">KDB생명 다이렉트사업팀장 / 다이렉트사업 총괄 임원</div><div class="tl-desc">국내 최초 다이렉트보험 상품 개발·판매채널 구축을 통한 온라인 생명보험 사업 총괄 (5년 연속 업계 1위). 인터넷보험 최초 무해지환급형 암보험 출시.</div></div>
+              <div class="tl-item"><div class="tl-dot" style="background:var(--blue)"></div><div class="tl-date" style="color:var(--blue)">2010.04</div><div class="tl-title">한국산업은행계열 KDB생명 마케팅전략</div><div class="tl-desc">KDB생명 마케팅전략 담당. 금융 브랜드 포지셔닝 및 채널별 고객 획득 전략 수립.</div></div>
+              <div class="tl-item"><div class="tl-dot" style="background:rgba(201,151,58,.5)"></div><div class="tl-date" style="color:var(--gold)">2000.01</div><div class="tl-title">동아생명보험 인수합병(M&amp;A) 실무</div><div class="tl-desc">금융기관 M&amp;A 실무 담당. 이해관계자 구조 조정과 사업통합 기획 경험.</div></div>
+              <div class="tl-item"><div class="tl-dot" style="background:rgba(201,151,58,.4)"></div><div class="tl-date" style="color:var(--gold)">1991 – 1996</div><div class="tl-title">금호아시아나그룹 경영전략본부 · 비전경영실</div><div class="tl-desc">경영전략 수립 및 계열사 사업전략·진도관리 담당. 대기업 전략 기획 현장 경험.</div></div>
+            </div>
+
+            <div class="award-card award-gold"><span style="font-size:22px">🏆</span><div><div class="award-date" style="color:var(--gold)">2018.10 수상</div><div class="award-name">2018 소셜벤처경연대회 벤처기업부 장관상</div><div class="award-sub">사회적 가치와 사업 모델을 결합한 벤처 기획 역량 공인.</div></div></div>
+
+            <div class="tag-row"><span class="tag">업계최초 인터넷보험</span><span class="tag">5년 연속 업계 1위</span><span class="tag">실행형 기획</span><span class="tag">정책·제도 활용</span><span class="tag">이해관계 설계</span><span class="tag">B2B·B2G</span><span class="tag">CCTV보안솔루션</span><span class="tag">장관상</span></div>
+            
+            <!-- 탭02 섹션 끝 CTA -->
+            
+        </div>
+    </div></div>
+<div class="acc-item reveal" id="acc3">
+      <div class="acc-header" style="background:#16a34a;" onclick="toggleAcc(3)">
+        <span class="acc-icon">♻️</span>
+        <div class="acc-title">ESG활동 전문가</div>
+        <span class="acc-arrow">›</span>
+      </div>
+      <div class="acc-body">
+        <div class="acc-body-inner">
+            <div class="field-desc">2020년부터 폐섬유 재활용 벤처기업 경영총괄 업무를 담당하며, 섬유폐기물 제품연구(연구소장 2년) 및 제품표준화 작업 등 친환경 재활용 업사이클 사업을 통한 ESG경영 사업모델 개발에 앞장서고 있습니다.<br/><br/>2024년부터 국내 의류 대기업의 재고의류 재활용 처리를 통한 기업의 ESG경영 지원 사업모델 구축 지원과 사회적기업 아름다운가게, (사)환경교육센터와 협업을 통한 서울·경기지역 초·중·고등학교를 대상으로 폐섬유 재활용 벤치 공급사업을 주관하고 있습니다.</div>
+
+            <div class="box3">
+              <div class="box3-item" style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2)"><div class="box3-icon">♻️</div><div class="box3-lbl" style="color:#16a34a">소재</div><div class="box3-val">섬유폐기물<br/>업사이클 벤치</div></div>
+              <div class="box3-item" style="background:rgba(46,99,164,.08);border:1px solid rgba(46,99,164,.2)"><div class="box3-icon">🏫</div><div class="box3-lbl" style="color:var(--blue)">공급처</div><div class="box3-val">서울·경기<br/>초·중·고등학교</div></div>
+              <div class="box3-item" style="background:rgba(201,151,58,.08);border:1px solid rgba(201,151,58,.2)"><div class="box3-icon">🤝</div><div class="box3-lbl" style="color:var(--gold)">협업기관</div><div class="box3-val">아름다운가게<br/>환경교육센터</div></div>
+            </div>
+
+            <ul class="sub-list">
+              <li><div><div class="li-title">한국섬유자원순환협회 정책자문</div><div class="li-desc">섬유폐기물 재활용 사업체계 구축·신규시장 개발·협회운영정책 자문. ㈜금용 협력기반 사업모델구축 및 기후부 정책연계 사업 기획.</div></div></li>
+              <li><div><div class="li-title">아름다운×학교벤치 사업 주관 (2024~현재)</div><div class="li-desc">아름다운가게·(사)환경교육센터와 3자 협업 구조 설계. 버려지는 폐섬유를 친환경 처리해 학교 벤치로 제작·공급. <strong>2024~2026년 41개 학교 180개 벤치 공급.</strong></div></div></li>
+              <li><div><div class="li-title">ESG경영 사업모델 개발 공급 (2024.01~현재)</div><div class="li-desc">국내 의류브랜드 재고의류 친환경 재활용 처리를 통한 ESG경영 비즈니스모델 구축 및 확산 사업.</div></div></li>
+            </ul>
+
+            <!-- 신기술 인증 -->
+            <div class="gallery-sub">🏭 재활용 공정 현장</div><div class="gallery-row"><div style="flex:1;min-width:0;"><img alt="ESG 사업 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_35.jpg" style="width:100%;height:120px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="ESG 사업 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_36.jpg" style="width:100%;height:120px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div><div style="flex:1;min-width:0;"><img alt="ESG 사업 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_37.jpg" style="width:100%;height:120px;object-fit:cover;display:block;border-radius:8px;aspect-ratio:4/3"/></div></div>
+            <div class="sub-label">□ 섬유폐기물 재활용 제품 신기술 인증 수여 (2022년)</div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:8px;margin-bottom:24px;">
+              <img alt="ESG 사업 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_38.jpg" style="width:100%;height:140px;object-fit:cover;display:block;border-radius:10px;aspect-ratio:4/3" />
+              <img alt="ESG 사업 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_39.jpg" style="width:100%;height:140px;object-fit:cover;display:block;border-radius:10px;aspect-ratio:4/3" />
+              <img alt="ESG 사업 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_40.jpg" style="width:100%;height:140px;object-fit:cover;display:block;border-radius:10px;aspect-ratio:4/3" />
+            </div>
+
+            <!-- 인도네시아 타당성 조사 -->
+            <div class="sub-label">□ 인도네시아 섬유폐기물 재활용공장 설립 타당성 조사 (2022년)</div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(80px,1fr));gap:8px;margin-bottom:24px;">
+              <img alt="ESG 사업 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_41.jpg" style="width:100%;height:120px;object-fit:cover;display:block;border-radius:10px;aspect-ratio:4/3" />
+              <img alt="ESG 사업 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_42.jpg" style="width:100%;height:120px;object-fit:cover;display:block;border-radius:10px;aspect-ratio:4/3" />
+              <img alt="ESG 사업 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_43.jpg" style="width:100%;height:120px;object-fit:cover;display:block;border-radius:10px;aspect-ratio:4/3" />
+              <img alt="ESG 사업 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_44.jpg" style="width:100%;height:120px;object-fit:cover;display:block;border-radius:10px;aspect-ratio:4/3" />
+            </div>
+
+            <!-- 투자설명회 -->
+            <div class="sub-label">□ 섬유폐기물 재활용사업 투자설명회 개최 (2023년)</div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:8px;margin-bottom:24px;">
+              <img alt="ESG 사업 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_45.jpg" style="width:100%;height:130px;object-fit:cover;display:block;border-radius:10px;aspect-ratio:4/3" />
+              <img alt="ESG 사업 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_46.jpg" style="width:100%;height:130px;object-fit:cover;display:block;border-radius:10px;aspect-ratio:4/3" />
+              <img alt="ESG 사업 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_47.jpg" style="width:100%;height:130px;object-fit:cover;display:block;border-radius:10px;aspect-ratio:4/3" />
+            </div>
+
+            <!-- 새 설치사례 12장 — 학교별 2장씩 -->
+            <div class="sub-label">📸 학교 벤치 설치 현장</div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:12px;margin-bottom:20px;">
+
+              <!-- 문화초 -->
+              <div style="background:var(--bg);border-radius:12px;overflow:hidden;border:1px solid var(--border);">
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;">
+                  <img alt="ESG 사업 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_48.jpg" style="width:100%;height:100px;object-fit:cover;display:block;border-radius:0px;aspect-ratio:4/3" />
+                  <img alt="ESG 사업 활동 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_49.jpg" style="width:100%;height:100px;object-fit:cover;display:block;border-radius:0px;aspect-ratio:4/3" />
+                </div>
+                <div style="padding:8px 12px;"><div style="font-size:12px;font-weight:700;color:var(--navy);">문화초등학교</div><div style="font-size:11px;color:var(--muted);">외부 — 본관 앞</div></div>
+              </div>
+
+              <!-- 한양대부속중 -->
+              <div style="background:var(--bg);border-radius:12px;overflow:hidden;border:1px solid var(--border);">
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;">
+                  <img alt="사업 활동 현장 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_50.jpg" style="width:100%;height:100px;object-fit:cover;display:block;border-radius:0px;aspect-ratio:4/3" />
+                  <img alt="사업 활동 현장 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_51.jpg" style="width:100%;height:100px;object-fit:cover;display:block;border-radius:0px;aspect-ratio:4/3" />
+                </div>
+                <div style="padding:8px 12px;"><div style="font-size:12px;font-weight:700;color:var(--navy);">한양대 사범대학 부속중학교</div><div style="font-size:11px;color:var(--muted);">외부</div></div>
+              </div>
+
+              <!-- 수성중 -->
+              <div style="background:var(--bg);border-radius:12px;overflow:hidden;border:1px solid var(--border);">
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;">
+                  <img alt="사업 활동 현장 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_52.jpg" style="width:100%;height:100px;object-fit:cover;display:block;border-radius:0px;aspect-ratio:4/3" />
+                  <img alt="사업 활동 현장 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_53.jpg" style="width:100%;height:100px;object-fit:cover;display:block;border-radius:0px;aspect-ratio:4/3" />
+                </div>
+                <div style="padding:8px 12px;"><div style="font-size:12px;font-weight:700;color:var(--navy);">수성중학교</div><div style="font-size:11px;color:var(--muted);">외부</div></div>
+              </div>
+
+              <!-- 연희중 -->
+              <div style="background:var(--bg);border-radius:12px;overflow:hidden;border:1px solid var(--border);">
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;">
+                  <img alt="사업 활동 현장 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_54.jpg" style="width:100%;height:100px;object-fit:cover;display:block;border-radius:0px;aspect-ratio:4/3" />
+                  <img alt="사업 활동 현장 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_55.jpg" style="width:100%;height:100px;object-fit:cover;display:block;border-radius:0px;aspect-ratio:4/3" />
+                </div>
+                <div style="padding:8px 12px;"><div style="font-size:12px;font-weight:700;color:var(--navy);">연희중학교</div><div style="font-size:11px;color:var(--muted);">외부</div></div>
+              </div>
+
+              <!-- 충현중 -->
+              <div style="background:var(--bg);border-radius:12px;overflow:hidden;border:1px solid var(--border);">
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;">
+                  <img alt="사업 활동 현장 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_56.jpg" style="width:100%;height:100px;object-fit:cover;display:block;border-radius:0px;aspect-ratio:4/3" />
+                  <img alt="사업 활동 현장 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_57.jpg" style="width:100%;height:100px;object-fit:cover;display:block;border-radius:0px;aspect-ratio:4/3" />
+                </div>
+                <div style="padding:8px 12px;"><div style="font-size:12px;font-weight:700;color:var(--navy);">충현중학교</div><div style="font-size:11px;color:var(--muted);">외부·실내</div></div>
+              </div>
+
+              <!-- 무학여고 -->
+              <div style="background:var(--bg);border-radius:12px;overflow:hidden;border:1px solid var(--border);">
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;">
+                  <img alt="사업 활동 현장 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_58.jpg" style="width:100%;height:100px;object-fit:cover;display:block;border-radius:0px;aspect-ratio:4/3" />
+                  <img alt="사업 활동 현장 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_59.jpg" style="width:100%;height:100px;object-fit:cover;display:block;border-radius:0px;aspect-ratio:4/3" />
+                </div>
+                <div style="padding:8px 12px;"><div style="font-size:12px;font-weight:700;color:var(--navy);">무학여자고등학교</div><div style="font-size:11px;color:var(--muted);">실내·외</div></div>
+              </div>
+
+            </div>
+
+            <div class="sub-label">공급 완료 학교 (2024~2026 · 41개교)</div>
+            <div class="supply-wrap">
+              <span class="sp-elem sp-green">온수초</span><span class="sp-elem sp-green">단샘초</span><span class="sp-elem sp-green">윤슬초</span><span class="sp-elem sp-green">북성초</span><span class="sp-elem sp-green">해밀초</span><span class="sp-elem sp-green">평일초</span><span class="sp-elem sp-green">문화초</span><span class="sp-elem sp-green">고진초</span>
+              <span class="sp-elem sp-blue">서울농학교</span><span class="sp-elem sp-blue">한양대부속중</span><span class="sp-elem sp-blue">수성중</span><span class="sp-elem sp-blue">성남서중</span><span class="sp-elem sp-blue">숭실중</span><span class="sp-elem sp-blue">송내중앙중</span><span class="sp-elem sp-blue">동국대부속중</span><span class="sp-elem sp-blue">연희중</span>
+              <span class="sp-elem sp-gold">충현중</span><span class="sp-elem sp-gold">중앙여고</span><span class="sp-elem sp-gold">무학여고</span>
+              <span class="sp-elem" style="background:#f3f4f6;border:1px solid #d1d5db;color:#6b7280;">+ 22개교 진행중</span>
+            </div>
+
+            <div class="sub-label">자원순환 경력 타임라인</div>
+            <div class="tl-wrap">
+              <div class="tl-item"><div class="tl-dot" style="background:#16a34a"></div><div class="tl-date" style="color:#16a34a">2024.01 ~ 현재</div><div class="tl-title">섬유폐기물 재활용 ESG경영 사업모델 개발 공급</div><div class="tl-desc">국내 의류브랜드 재고의류 친환경 재활용 처리를 통한 ESG경영 비즈니스모델 구축 및 확산 사업.</div></div>
+              <div class="tl-item"><div class="tl-dot" style="background:#16a34a"></div><div class="tl-date" style="color:#16a34a">2024 ~ 현재</div><div class="tl-title">아름다운×학교벤치 사업 주관</div><div class="tl-desc">아름다운가게·환경교육센터 협업. 폐섬유 → 학교 업사이클 벤치 공급 사업 연간 지속.</div></div>
+              <div class="tl-item"><div class="tl-dot" style="background:rgba(34,197,94,.6)"></div><div class="tl-date" style="color:#16a34a">2020.01</div><div class="tl-title">섬유폐기물 재활용 벤처기업 경영총괄</div><div class="tl-desc">섬유폐기물 재활용 벤처기업 경영 총괄. 제품연구소장 2년, 제품표준화·ESG경영 사업모델 개발.</div></div>
+            </div>
+
+            <div class="tag-row"><span class="tag">자원순환</span><span class="tag">ESG</span><span class="tag">업사이클</span><span class="tag">폐섬유재활용</span><span class="tag">신기술인증(2022)</span><span class="tag">사회적기업 협업</span><span class="tag">41개교 180개</span><span class="tag">지속가능경영</span></div>
+            
+            
+        </div>
+    </div></div>
+<div class="acc-item reveal" id="acc4">
+      <div class="acc-header" style="background:#6b21a8;" onclick="toggleAcc(4)">
+        <span class="acc-icon">🔐</span>
+        <div class="acc-title">CCTV영상 개인정보 보안 전문가</div>
+        <span class="acc-arrow">›</span>
+      </div>
+      <div class="acc-body">
+        <div class="acc-body-inner">
+            <div class="field-desc">개인정보보호법 및 공동주택 CCTV 관련 법령에 기반한 실무 대응 경험을 바탕으로, 영상정보 처리 분쟁 및 신고·조정 절차 전반을 자문합니다. 현재 ㈜에이디소프트 부사장으로서 실시간 비식별처리 솔루션 보급사업을 총괄하고 있습니다.</div>
+            <ul class="sub-list">
+              <li><div><div class="li-title">㈜에이디소프트 부사장</div><div class="li-desc">CCTV영상 개인정보 보호를 위한 실시간 비식별처리(모자이크처리) 솔루션 보급사업 총괄.</div></div></li>
+              <li><div><div class="li-title">개인정보보호위원회 신고 전략</div><div class="li-desc">'법적 판단 → 압박 구조 → 출구 제시(솔루션)' 프레임 기반 신고 실익 창출 전략 수립 및 실무 대응.</div></div></li>
+              <li><div><div class="li-title">공동주택 CCTV 분쟁 자문</div><div class="li-desc">공동주택 CCTV 설치·운영 기준 및 개인정보 처리 방침에 관한 법적 근거 분석과 분쟁 대응 방안 자문.</div></div></li>
+              <li><div><div class="li-title">개인정보 보호 체계 구축</div><div class="li-desc">기관·단체의 개인정보 처리 방침 수립, 내부 관리 체계 점검 및 법령 준수 가이드 제공.</div></div></li>
+            </ul>
+            <div class="tag-row"><span class="tag">개인정보보호법</span><span class="tag">CCTV법령</span><span class="tag">비식별처리솔루션</span><span class="tag">분쟁대응</span><span class="tag">공동주택</span><span class="tag">보안자문</span><span class="tag">B2G제안</span></div>
+            
+            <div class="sub-label">🔍 삐삐솔루션 도입 전후 비교</div>
+            <div style="margin-bottom:16px;border-radius:12px;overflow:hidden;border:1px solid var(--border);">
+              <img alt="사업 활동 현장 사진" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_60.jpg" style="width:100%;height:auto;max-height:360px;object-fit:contain;display:block;border-radius:12px;background:#f8f9fa;padding:8px;"/>
+            </div>
+
+            
+            
+            
+        </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="cta" class="reveal" style="background:var(--surface);padding:48px 24px;display:flex;justify-content:center;">
+  <div style="max-width:720px;width:100%;">
+    <div class="sec-label">Contact</div>
+    <div class="sec-title" style="margin-bottom:24px;">연락주시면 소중한 인연으로 이어가겠습니다.</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+      <button type="button" onclick="openInquiry('협업 문의')" class="cta-card" style="background:none;border:1px solid var(--border);cursor:pointer;text-align:center;">
+        <div class="cta-icon">🤝</div><div class="cta-title">협업 문의</div><div class="cta-desc">프로젝트 상담 · 문화예술 협업</div>
+      </button>
+      <button type="button" onclick="openInquiry('강의 문의')" class="cta-card" style="background:none;border:1px solid var(--border);cursor:pointer;text-align:center;">
+        <div class="cta-icon">🎓</div><div class="cta-title">강의 문의</div><div class="cta-desc">강의 / 출강 요청 문의</div>
+      </button>
+      <button type="button" onclick="openInquiry('ESG경영 상담')" class="cta-card" style="background:none;border:1px solid var(--border);cursor:pointer;text-align:center;">
+        <div class="cta-icon">♻️</div><div class="cta-title">ESG경영</div><div class="cta-desc">ESG사업 상담 문의</div>
+      </button>
+      <button type="button" onclick="openInquiry('CCTV영상보안')" class="cta-card" style="background:none;border:1px solid var(--border);cursor:pointer;text-align:center;">
+        <div class="cta-icon">🔐</div><div class="cta-title">CCTV영상보안</div><div class="cta-desc">개인정보보안 적용 문의</div>
+      </button>
+    </div>
+  </div>
+</section>
+<section id="contact" class="reveal">
+  <div class="contact-wrap">
+    <div>
+      <div class="sec-label">Contact</div>
+      <div class="sec-title" style="color:#fff">함께 이야기해요</div>
+    </div>
+    <div class="c-grid">
+      <a href="tel:01023373123" class="c-item"><span style="font-size:22px">📞</span><div><div class="c-type">전화</div><div class="c-val">010-2337-3123</div></div></a>
+      <a href="mailto:jbpak3123@hanmail.net" class="c-item"><span style="font-size:22px">✉️</span><div><div class="c-type">이메일</div><div class="c-val">jbpak3123@hanmail.net</div></div></a>
+      <div class="c-item" style="cursor:default"><span style="font-size:22px">📍</span><div><div class="c-type">지역</div><div class="c-val">서울 강동구</div></div></div>
+      <div class="c-item" style="cursor:default"><span style="font-size:22px">🕐</span><div><div class="c-type">응답 시간</div><div class="c-val">평일 09:00 – 18:00</div></div></div>
+    </div>
+    <div style="text-align:center;padding-top:16px;border-top:1px solid rgba(255,255,255,.1);">
+      <div class="c-copy">Digital Business Card · 박장배 · 2025</div>
+    </div>
+  </div>
+</section>
+<!-- 문의 메모장 모달 -->
+<div id="inquiryOverlay" style="display:none;position:fixed;inset:0;z-index:500;background:rgba(10,20,40,.82);backdrop-filter:blur(10px);align-items:center;justify-content:center;padding:16px;">
+  <div style="background:#fff;border-radius:20px;padding:32px 28px;max-width:440px;width:100%;box-shadow:0 24px 80px rgba(0,0,0,.45);position:relative;">
+    <button type="button" onclick="closeInquiry()" style="position:absolute;top:14px;right:14px;background:#f3f4f6;border:none;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:16px;line-height:1;">✕</button>
+    <div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#c9973a;font-weight:700;margin-bottom:6px;">INQUIRY</div>
+    <div id="inquiryTitle" style="font-size:19px;font-weight:700;color:#1a3a5c;margin-bottom:22px;"></div>
+    <div style="display:flex;flex-direction:column;gap:14px;">
+      <div>
+        <label style="font-size:11px;font-weight:700;color:#6b7280;letter-spacing:.08em;display:block;margin-bottom:5px;">이름 *</label>
+        <input id="inqName" type="text" placeholder="성함을 입력하세요"
+          style="width:100%;padding:11px 14px;border:1.5px solid #e5e7eb;border-radius:9px;font-size:14px;outline:none;font-family:inherit;transition:border .2s;"
+          onfocus="this.style.borderColor='#1a3a5c'" onblur="this.style.borderColor='#e5e7eb'"/>
+      </div>
+      <div>
+        <label style="font-size:11px;font-weight:700;color:#6b7280;letter-spacing:.08em;display:block;margin-bottom:5px;">연락처 *</label>
+        <input id="inqPhone" type="tel" placeholder="010 - 0000 - 0000" maxlength="17"
+          style="width:100%;padding:11px 14px;border:1.5px solid #e5e7eb;border-radius:9px;font-size:14px;outline:none;font-family:inherit;transition:border .2s;letter-spacing:.04em;"
+          oninput="formatPhone(this)"
+          onfocus="this.style.borderColor='#1a3a5c'" onblur="this.style.borderColor='#e5e7eb'"/>
+      </div>
+      <div>
+        <label style="font-size:11px;font-weight:700;color:#6b7280;letter-spacing:.08em;display:block;margin-bottom:5px;">상담 내용</label>
+        <textarea id="inqContent" placeholder="문의하실 내용을 간략히 적어주세요..." rows="4"
+          style="width:100%;padding:11px 14px;border:1.5px solid #e5e7eb;border-radius:9px;font-size:14px;outline:none;font-family:inherit;resize:vertical;transition:border .2s;"
+          onfocus="this.style.borderColor='#1a3a5c'" onblur="this.style.borderColor='#e5e7eb'"></textarea>
+      </div>
+      <button type="button" onclick="sendInquiryMail()"
+        style="width:100%;background:#c9973a;color:#fff;border:none;border-radius:50px;padding:14px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;letter-spacing:.04em;transition:all .2s;"
+        onmouseover="this.style.background='#b8832a'" onmouseout="this.style.background='#c9973a'">
+        ✉️ 보내기
+      </button>
+      <p style="font-size:10.5px;color:#9ca3af;text-align:center;margin-top:-6px;">
+        수신: jbpak3123@hanmail.net · 제목: 문의드립니다
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- QR 플로팅 버튼 -->
+<button type="button" class="qr-float" onclick="showQRModal()">
+  <span>📱</span> QR 명함
+</button>
+
+<!-- QR 모달 오버레이 -->
+<div class="qr-overlay" id="qrOverlay">
+  <div class="qr-card">
+    <div class="qr-c-tr"></div>
+    <div class="qr-c-bl"></div>
+    <button type="button" class="qr-close" onclick="closeQRModal()">✕</button>
+
+    <div class="qr-header">
+      <div class="qr-photo" id="qrPhotoEl" style="background:url('https://raw.githubusercontent.com/jbpak3123-pixel/park-jangbae-card/main/images/img_61.jpg') center/cover no-repeat;"></div>
+      <div>
+        <div class="qr-name-label">Digital Business Card</div>
+        <div class="qr-name">박 장 배</div>
+        <div class="qr-name-en">PARK JANG BAE</div>
+      </div>
+    </div>
+    <div class="qr-divider"></div>
+
+    <div class="qr-section">
+      <div class="qr-scan-label">QR 코드로 명함 공유</div>
+      <div style="display:flex;justify-content:center;">
+        <div class="qr-wrap">
+          <div id="qrcode"></div>
+        </div>
+      </div>
+      <div class="qr-scan-hint">스캔하면 이 디지털 명함 페이지로 이동합니다</div>
+    </div>
+
+    <div class="qr-contacts">
+      <a href="tel:01023373123" class="qr-c-row" style="text-decoration:none;">
+        <span class="qr-c-icon">📞</span>
+        <div><div class="qr-c-type">전화</div><div class="qr-c-val">010-2337-3123</div></div>
+      </a>
+      <a href="mailto:jbpak3123@hanmail.net" class="qr-c-row" style="text-decoration:none;">
+        <span class="qr-c-icon">✉️</span>
+        <div><div class="qr-c-type">이메일</div><div class="qr-c-val">jbpak3123@hanmail.net</div></div>
+      </a>
+    </div>
+
+    <div class="qr-tags">
+      <span class="qr-tag">문화예술</span>
+      <span class="qr-tag">사업기획</span>
+      <span class="qr-tag">ESG</span>
+      <span class="qr-tag">CCTV보안</span>
+    </div>
+
+    <div class="qr-footer">Digital Profile · 박장배 · 2025</div>
+  </div>
+</div>
+<div id="saveToast" style="display:none;position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:#1a3a5c;color:#fff;padding:12px 24px;border-radius:50px;font-size:13px;font-weight:600;z-index:600;box-shadow:0 4px 20px rgba(0,0,0,.3);">✅ 이메일 앱이 열렸습니다</div>
+<script>
+/* ── QR 모달 제어 ── */
+var qrGenerated = false;
+function showQRModal() {
+  var ovl = document.getElementById('qrOverlay');
+  if (ovl) { ovl.classList.add('show'); document.body.style.overflow='hidden'; }
+  if (!qrGenerated) {
+    qrGenerated = true;
+    try {
+      var qrc = document.getElementById('qrcode');
+      qrc.innerHTML = '';
+      new QRCode(qrc, {
+        text: 'https://jbpak3123-pixel.github.io/park-jangbae-card/',
+        width: 168, height: 168,
+        colorDark: '#1a3a5c', colorLight: '#ffffff',
+        correctLevel: QRCode.CorrectLevel.M
+      });
+    } catch(e) {}
+  }
+}
+function closeQRModal() {
+  var ovl = document.getElementById('qrOverlay');
+  if (ovl) { ovl.classList.remove('show'); document.body.style.overflow=''; }
+}
+document.addEventListener('DOMContentLoaded', function(){
+  var ovl = document.getElementById('qrOverlay');
+  if (ovl) ovl.addEventListener('click', function(e){ if(e.target===this) closeQRModal(); });
+});
+</script>
+
+<script>
+function downloadVCard() {
+  var vcard = [
+    'BEGIN:VCARD','VERSION:3.0',
+    'FN:박장배','N:박;장배;;;',
+    'TEL;TYPE=CELL:010-2337-3123',
+    'EMAIL:jbpak3123@hanmail.net',
+    'ORG:강동미술협회 / 에이디소프트',
+    'TITLE:회장 / 부사장',
+    'URL:https://jbpak3123-pixel.github.io/park-jangbae-card/',
+    'NOTE:사업전략 · 문화예술 · ESG · CCTV개인정보보안 전문가',
+    'END:VCARD'
+  ].join('\r\n');
+  var blob = new Blob([vcard], {type:'text/vcard;charset=utf-8'});
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement('a');
+  a.href = url; a.download = '박장배_연락처.vcf';
+  document.body.appendChild(a); a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  var t = document.getElementById('saveToast');
+  if (t) { t.style.display = 'block'; setTimeout(function(){ t.style.display = 'none'; }, 2500); }
+}
+
+function toggleAcc(idx) {
+  var items = document.querySelectorAll('.acc-item');
+  items.forEach(function(item, i) {
+    if (i === idx) {
+      var isOpen = item.classList.contains('open');
+      item.classList.toggle('open');
+      if (!isOpen) {
+        setTimeout(function() {
+          var navH = 54;
+          var top = item.getBoundingClientRect().top + window.pageYOffset - navH - 10;
+          window.scrollTo({top: top, behavior: 'smooth'});
+        }, 50);
+      }
+    } else {
+      item.classList.remove('open');
+    }
+  });
+}
+</script>
+<script>
+var currentCategory = '';
+
+function formatPhone(el) {
+  var v = el.value.replace(/[^0-9]/g, '');
+  if (v.length <= 3) {
+    el.value = v;
+  } else if (v.length <= 7) {
+    el.value = v.slice(0,3) + ' - ' + v.slice(3);
+  } else {
+    el.value = v.slice(0,3) + ' - ' + v.slice(3,7) + ' - ' + v.slice(7,11);
+  }
+}
+
+function openInquiry(cat) {
+  currentCategory = cat;
+  document.getElementById('inquiryTitle').textContent = cat + ' \ubb38\uc758';
+  document.getElementById('inqName').value = '';
+  document.getElementById('inqPhone').value = '';
+  document.getElementById('inqContent').value = '';
+  document.getElementById('inquiryOverlay').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+  setTimeout(function(){ document.getElementById('inqName').focus(); }, 100);
+}
+
+function closeInquiry() {
+  document.getElementById('inquiryOverlay').style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+function sendInquiryMail() {
+  var name    = document.getElementById('inqName').value.trim();
+  var phone   = document.getElementById('inqPhone').value.replace(/[^0-9]/g,'').replace(/(\d{3})(\d{4})(\d{4})/,'$1-$2-$3');
+  var content = document.getElementById('inqContent').value.trim();
+  if (!name)  { alert('\uc774\ub984\uc744 \uc785\ub825\ud574 \uc8fc\uc138\uc694.'); document.getElementById('inqName').focus(); return; }
+  if (!phone) { alert('\uc5f0\ub77d\uc815\ubcf4\ub97c \uc785\ub825\ud574 \uc8fc\uc138\uc694.'); document.getElementById('inqPhone').focus(); return; }
+  var bodyText = '\uc548\ub155\ud558\uc138\uc694.\n\ubc15\uc7a5\ubc30 \ub514\uc9c0\ud138 \uba85\ud568\uc744 \ud1b5\ud574 \ubb38\uc758\ub4dc\ub9bd\ub2c8\ub2e4.\n\n';
+  bodyText += '\u25a0 \ubb38\uc758 \ubd84\uc57c: ' + currentCategory + '\n';
+  bodyText += '\u25a0 \uc774       \ub984: ' + name + '\n';
+  bodyText += '\u25a0 \uc5f0 \ub77d \uc815 \ubcf4: ' + phone + '\n\n';
+  bodyText += '\u25a0 \uc0c1\ub2f4 \ub0b4\uc6a9:\n' + (content || '(\ub0b4\uc6a9 \uc5c6\uc74c)');
+  var subject = encodeURIComponent('\ubb38\uc758\ub4dc\ub9bd\ub2c8\ub2e4');
+  var body = encodeURIComponent(bodyText);
+  window.location.href = 'mailto:jbpak3123@hanmail.net?subject=' + subject + '&body=' + body;
+  closeInquiry();
+  var t = document.getElementById('saveToast');
+  t.style.display = 'block';
+  setTimeout(function(){ t.style.display = 'none'; }, 2500);
+}
+
+document.getElementById('inquiryOverlay').addEventListener('click', function(e){
+  if (e.target === this) closeInquiry();
+});
+document.addEventListener('keydown', function(e){ if (e.key === 'Escape') { closeInquiry(); closeQRModal(); } });
+
+/* ── QR 포토 동적 설정 ── */
+(function(){
+  var heroPhoto = document.querySelector('.hero-photo');
+  var qrPhotoEl = document.getElementById('qrPhotoEl');
+  if (heroPhoto && qrPhotoEl) {
+    var bg = heroPhoto.style.backgroundImage || window.getComputedStyle(heroPhoto).backgroundImage;
+    if (bg && bg !== 'none') qrPhotoEl.style.backgroundImage = bg;
+  }
+})();
+
+/* ── Intersection Observer (reveal 애니메이션) ── */
+(function(){
+  if (!window.IntersectionObserver) return;
+  var els = document.querySelectorAll('.reveal');
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+    });
+  }, {threshold: 0.12});
+  els.forEach(function(el){ obs.observe(el); });
+})();
+
+
+/* ── 햄버거 메뉴 ── */
+(function(){
+  var ham = document.getElementById('navHam');
+  var nav = document.getElementById('navLinks');
+  if (!ham || !nav) return;
+  ham.addEventListener('click', function(){
+    var isOpen = nav.classList.toggle('open');
+    ham.setAttribute('aria-expanded', isOpen);
+    ham.textContent = isOpen ? '✕' : '☰';
+  });
+  nav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      nav.classList.remove('open');
+      ham.setAttribute('aria-expanded', false);
+      ham.textContent = '☰';
+    });
+  });
+  document.addEventListener('click', function(e){
+    if (!nav.contains(e.target) && !ham.contains(e.target)){
+      nav.classList.remove('open');
+      ham.setAttribute('aria-expanded', false);
+      ham.textContent = '☰';
+    }
+  });
+})();
+
+/* ── Active nav 스크롤 동기화 ── */
+(function(){
+  var sections = ['hero','expertise','contact'];
+  var links = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', function(){
+    var scrollY = window.pageYOffset;
+    var current = 'hero';
+    sections.forEach(function(id){
+      var sec = document.getElementById(id);
+      if (sec && sec.getBoundingClientRect().top + scrollY - 80 <= scrollY) current = id;
+    });
+    links.forEach(function(a){
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }, {passive: true});
+})();
+
+/* ── QR 코드 지연 로딩 (모달 첫 열 때) ── */
+var qrGenerated = false;
+var _origShowQR = window.showQR;
+</script>
+</body>
+</html>
